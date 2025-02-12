@@ -1,0 +1,3207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+* { 
+margin: 0%;
+padding: 0%;
+font-family: 'poppins', 'sans-serif' ;
+box-sizing: border-box;
+}
+
+body{
+height: 100%;
+width: 100%;
+-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.back-stage1, .back-stage2, .back-stage3, .back-stage4{
+    display: none;
+    z-index: 2;
+}
+
+
+.divfirst{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.s-logo{
+    font-size: 70px;
+    font-family: "Kablammo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 0;
+    color: #18006C;
+}
+
+.top-div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-div{
+    height: 100vh;
+    width: 100%;
+    background-color: #18006C;
+    position: relative;
+}
+
+.header{
+    height: 7vh;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    z-index: 2;
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header hr{
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color: rgb(175, 175, 175);
+}
+
+.logo p{
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo p i{
+    font-size: 20px;
+}
+
+.div1, .div2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div1 i, .div2 i{
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    opacity: 1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.div1 .p1{
+    bottom: 10%;
+    left: 10%;
+    transform: rotate(-30deg);
+}
+
+.div1 .p2{
+    bottom: 20%;
+    left: 20%;
+    transform: rotate(-40deg);
+}
+
+.div1 .p3{
+    top: 30%;
+    left: 30%;
+    transform: rotate(-50deg);
+}
+
+.div1 .p4{
+    bottom: 50%;
+    left: 5%;
+    transform: rotate(-40deg);
+}
+
+.div1 .p5{
+    top: 40%;
+    left: 20%;
+    transform: rotate(-30deg);
+}
+
+.div1 .p6{
+    top: 50%;
+    left: 30%;
+    transform: rotate(-50deg);
+}
+
+.div1 .p7{
+    top: 60%;
+    left: 15%;
+    transform: rotate(-40deg);
+}
+
+.div1 .p8{
+    top: 35%;
+    left: 15%;
+    transform: rotate(-30deg);
+}
+
+.div1 .p9{
+    top: 75%;
+    left: 5%;
+    transform: rotate(-50deg);
+}
+
+.div1 .p10{
+    top: 55%;
+    left: 6%;
+    transform: rotate(-40deg);
+}
+
+.div2 .p11{
+    top: 10%;
+    right: 10%;
+    transform: rotate(150deg);
+}
+
+.div2 .p12{
+    top: 20%;
+    right: 20%;
+    transform: rotate(160deg);
+}
+
+.div2 .p13{
+    top: 30%;
+    right: 30%;
+    transform: rotate(170deg);
+}
+
+.div2 .p14{
+    top: 30%;
+    right: 5%;
+    transform: rotate(180deg);
+}
+
+.div2 .p15{
+    top: 40%;
+    right: 20%;
+    transform: rotate(190deg);
+}
+
+.div2 .p16{
+    top: 50%;
+    right: 30%;
+    transform: rotate(200deg);
+}
+
+.div2 .p17{
+    top: 30%;
+    right: 25%;
+    transform: rotate(160deg);
+}
+
+.div2 .p18{
+    top: 35%;
+    right: 13%;
+    transform: rotate(170deg);
+}
+
+.div2 .p19{
+    top: 15%;
+    right: 5%;
+    transform: rotate(180deg);
+}
+
+.div2 .p20{
+    top: 55%;
+    right: 6%;
+    transform: rotate(190deg);
+}
+
+.p1, .p2, .p3, .p4, .p5,.p6, .p7, .p8, .p9, .p10{
+    animation-name: blinkBox1;
+}
+
+.p11, .p12, .p13, .p14, .p15, .p16, .p17, .p18, .p19, .p20{
+    animation-name: blinkBox2;
+}
+
+@keyframes blinkBox1 {
+    0%, 50% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+}
+  
+@keyframes blinkBox2 {
+    0%, 50% {
+      opacity: 0;
+    }
+    25%, 75% {
+      opacity: 1;
+    }
+}
+
+.back-text{
+    position: absolute;
+    z-index: 2;
+    font-size: 180px;
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    top: 30%;
+    right: 1px;
+    text-shadow: 1px 1px 5px black;
+    cursor: default;
+    animation: moveUpDown 2s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(10); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateX(20px); /* Move up */
+    }
+}
+
+.left-text{
+    position: absolute;
+    width: 40vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(197, 56, 197);
+    left: 8%;
+    bottom: 20%;
+    z-index: 2;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    cursor: default;
+}
+
+.try-btn{
+    position: absolute;
+    height: 8vh;
+    width: 25vh;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #18006C;
+    right: 5%;
+    bottom: 20%;
+    cursor: pointer;
+    z-index: 3;
+    background-color: #FEA515;
+}
+
+.canimg1{
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    z-index: 4;
+    top: -5%;
+    transform: rotate(-15deg);
+    left: 10%;
+    transition: opacity 0.5s ease;
+}
+
+
+.canimg2{
+    position: absolute;
+    height: 500px;
+    width: 550px;
+    z-index: 3;
+    bottom: 0;
+    right: 25%;
+    transform: rotate(20deg);
+}
+
+.sec-div{
+    height: 100vh;
+    background-color: #FAD8D7;
+    position: relative;
+    z-index: 1;
+}
+
+.backtext2, .backtext3, .backtext4{
+    position: absolute;
+    font-size: 100px;
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 14vh;
+    z-index: 1;
+    color: #18006C;
+    cursor: default;
+}
+
+@keyframes move {
+    0%, 100% {
+        transform: translateY(1); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateX(50px); /* Move up */
+    }
+}
+
+.backtext2{
+    top: 10px;
+    left: 25%;
+}
+
+.backtext3{
+    top: 15%;
+    left: 10%;
+    
+}
+
+.backtext4{
+    top: 28%;
+    left: 15%;
+}
+
+
+
+.circleshape{
+    height: 60vh;
+    width: 60vh;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 3;
+}
+
+.circle1, .circle2{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;   
+}
+
+.circle1{
+    background-image: url(./images/orange\ can\ girl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -10%;
+    top: 25%;
+    animation: movefi 2s infinite ease-in-out;
+}
+
+.circle2{
+    background-image: url(./images/strwa\ can\ girl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    animation: movese 2s infinite ease-in-out;
+}
+
+@keyframes movefi {
+    0%, 100% {
+        transform: translateY(1); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(20px); /* Move up */
+    }
+}
+
+@keyframes movese {
+    0%, 100% {
+        transform: translateY(1); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateX(25px); /* Move up */
+    }
+}
+
+.third-div{
+    height: 40vh;
+    background-color: #FAD8D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-div p{
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    color: #18006C;
+    cursor: default;
+}
+
+.forth-div{
+    height: 100vh;
+    width: 100%;
+    background-color: #FAD8D7;
+    position: relative;
+}
+
+.bk-img{
+    position: absolute;
+    height: 500px;
+    width: 1200px;
+    bottom: 10px;
+    left: 5%;
+    z-index: 2;
+}
+
+.forth-div .img1{
+    position: absolute;
+    height: 400px;
+    width: 450px;
+    bottom: 24%;
+    left: 6%;
+    z-index: 3;
+    transition: transform 0.5s ease;
+}
+
+.forth-div .img2{
+    position: absolute;
+    height: 420px;
+    width: 520px;
+    bottom: 12%;
+    left: 21.5%;
+    z-index: 4;
+}
+
+.forth-div .img3{
+    position: absolute;
+    height: 500px;
+    width: 670px;
+    bottom: 16%;
+    right: 2%;
+    z-index: 3;
+}
+
+.fifth-div{
+    height: 100vh;
+    width: 100%;
+    background-color:#FAD8D7 ;
+    position: relative;
+}
+
+.indg-text{
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #18006C;
+    height: 20vh;
+    cursor: default;
+}
+
+.backimg-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 20px;
+    position: relative;
+}
+
+.img-cans{
+    height: 400px;
+    width: 350px;
+    padding: 30px;
+    z-index: 2;
+}
+
+.splash-1, .splash-2, .splash-3, .splash-4{
+    position: absolute;
+    height: 600px;
+    top: -10%;
+    z-index: 1;
+}
+
+.splash-1{
+    left: -10%;
+}
+
+.splash-2{
+    left: 16%;
+}
+
+.splash-3{
+    right: 20%;
+    width: 450px;
+    height: 450px;
+}
+
+.splash-4{
+    top: -5%;
+    right: -5%;
+    height: 450px;
+    width: 500px;
+}
+
+.mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+    height: 70px;
+    position: absolute;
+    z-index: 15;
+}
+
+.mango-cube{
+    left: 15%;
+    top: 15%;
+    transform: rotate(-50deg);
+}
+
+.strawberry-cube{
+    top: 7%;
+    right: 15%;
+    transform: rotate(20deg);
+}
+
+.vanilla-leafs{
+    bottom: 10%;
+    left: 30%;
+}
+
+.orange-slice{
+    bottom: 15%;
+    right: 20%;
+}
+
+.can-images{
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.can-images div{
+    display: flex;
+}
+
+footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18006C;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    z-index: 2;
+    cursor: default;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    z-index: 20;
+}
+
+.scroll-to-top:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+@media (max-width:2600px) and (min-width:1950px) {
+
+    .s-logo{
+        font-size: 170px;
+    }
+    
+    .header a{
+        font-size: 55px;
+    }
+    
+    .logo p{
+        font-size: 65px;
+    }
+    
+    .logo p i{
+        font-size: 60px;
+    }
+    
+    .back-text{
+        font-size: 350px;
+    }
+    
+    .left-text{
+        font-size: 30px;
+    }
+    
+    .try-btn{
+        font-size: 37px;
+    }
+    
+    .canimg1{
+        height: 1200px;
+        width: 1400px;
+    } 
+    
+    .canimg2{
+        height: 1000px;
+        width: 1100px;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 200px;
+    }
+        
+    .third-div p{
+        font-size: 250px;
+    }
+    
+    .bk-img{
+        height: 1600px;
+        width: 2500px;
+    }
+    
+    .forth-div .img1{
+        height: 900px;
+        width: 1000px;
+        bottom: 36%;
+        left: 5%;
+    }
+    
+    .forth-div .img2{
+        height: 920px;
+        width: 1100px;
+        bottom: 19%;
+        left: 23%;
+    }
+    
+    .forth-div .img3{
+        height: 1100px;
+        width: 1470px;
+        bottom: 26%;
+        right: -9%;
+    }
+    
+    .indg-text{
+        font-size: 250px;
+    }
+    
+    .img-cans{
+        height: 800px;
+        width: 600px;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        height: 1200px;
+    }
+    
+    .splash-1{
+        left: -10%;
+    }
+    
+    .splash-2{
+        left: 16%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        width: 950px;
+        height: 850px;
+    }
+    
+    .splash-4{
+        top: -5%;
+        right: -5%;
+        height: 950px;
+        width: 1000px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 120px;
+    }
+    
+    footer{
+        font-size: 25px;
+    }
+    
+}
+
+@media (max-width:1949px) and (min-width:1601px) {
+
+    .s-logo{
+        font-size: 140px;
+    }
+    
+    .header a{
+        font-size: 40px;
+    }
+    
+    .logo p{
+        font-size: 50px;
+    }
+    
+    .logo p i{
+        font-size: 50px;
+    }
+    
+    .back-text{
+        font-size: 250px;
+    }
+    
+    .left-text{
+        font-size: 25px;
+    }
+    
+    .try-btn{
+        font-size: 25px;
+    }
+    
+    .canimg1{
+        height: 900px;
+        width: 1100px;
+    } 
+    
+    .canimg2{
+        height: 750px;
+        width: 850px;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 150px;
+    }
+        
+    .third-div p{
+        font-size: 200px;
+    }
+    
+    .bk-img{
+        height: 1000px;
+        width: 1800px;
+    }
+    
+    .forth-div .img1{
+        height: 650px;
+        width: 700px;
+        bottom: 30%;
+        left: 5%;
+    }
+    
+    .forth-div .img2{
+        height: 700px;
+        width: 850px;
+        bottom: 15%;
+        left: 20%;
+    }
+    
+    .forth-div .img3{
+        height: 850px;
+        width: 1100px;
+        bottom: 20%;
+        right: -8%;
+    }
+    
+    .indg-text{
+        font-size: 210px;
+    }
+    
+    .img-cans{
+        height: 600px;
+        width: 450px;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        height: 850px;
+    }
+    
+    .splash-1{
+        left: -10%;
+    }
+    
+    .splash-2{
+        left: 16%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        width: 650px;
+        height: 750px;
+    }
+    
+    .splash-4{
+        top: -5%;
+        right: -5%;
+        height: 750px;
+        width: 700px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 120px;
+    }
+    
+    footer{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width:1600px) and (min-width:1530px) {
+
+    .s-logo{
+        font-size: 140px;
+    }
+    
+    .header a{
+        font-size: 35px;
+    }
+    
+    .logo p{
+        font-size: 40px;
+    }
+    
+    .logo p i{
+        font-size: 40px;
+    }
+    
+    .back-text{
+        font-size: 200px;
+    }
+    
+    .left-text{
+        font-size: 20px;
+    }
+    
+    .try-btn{
+        font-size: 23px;
+    }
+    
+    .canimg1{
+        height: 700px;
+        width: 900px;
+    } 
+    
+    .canimg2{
+        height: 600px;
+        width: 700px;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 130px;
+    }
+        
+    .third-div p{
+        font-size: 170px;
+    }
+    
+    .bk-img{
+        height: 1000px;
+        width: 1400px;
+    }
+    
+    .forth-div .img1{
+        height: 500px;
+        width: 550px;
+        bottom: 37%;
+        left: 5%;
+    }
+    
+    .forth-div .img2{
+        height: 550px;
+        width: 650px;
+        bottom: 20%;
+        left: 20%;
+    }
+    
+    .forth-div .img3{
+        height: 650px;
+        width: 850px;
+        bottom: 27%;
+        right: 0%;
+    }
+    
+    .indg-text{
+        font-size: 180px;
+    }
+    
+    .img-cans{
+        height: 500px;
+        width: 400px;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        height: 700px;
+    }
+    
+    .splash-1{
+        left: -10%;
+    }
+    
+    .splash-2{
+        left: 16%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        width: 550px;
+        height: 550px;
+    }
+    
+    .splash-4{
+        top: -5%;
+        right: -5%;
+        height: 550px;
+        width: 550px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 100px;
+    }
+    
+    footer{
+        font-size: 19px;
+    }
+    
+}
+
+@media (max-width:1300px) and (min-width:1000px) {
+
+    .s-logo{
+        font-size: 100px;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 30px;
+    }
+    
+    .logo p i{
+        font-size: 30px;
+    }
+    
+    .back-text{
+        font-size: 170px;
+    }
+    
+    .left-text{
+        font-size: 17px;
+    }
+    
+    .try-btn{
+        font-size: 18px;
+    }
+    
+    .canimg1{
+        height: 600px;
+        width: 750px;
+    } 
+    
+    .canimg2{
+        height: 500px;
+        width: 600px;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 110px;
+    }
+        
+    .third-div p{
+        font-size: 130px;
+    }
+    
+    .bk-img{
+        height: 900px;
+        width: 1200px;
+    }
+    
+    .forth-div .img1{
+        height: 400px;
+        width: 450px;
+        bottom: 38%;
+        left: 6%;
+    }
+    
+    .forth-div .img2{
+        height: 450px;
+        width: 510px;
+        bottom: 20%;
+        left: 23%;
+    }
+    
+    .forth-div .img3{
+        height: 500px;
+        width: 700px;
+        bottom: 30%;
+        right: -4%;
+    }
+    
+    .indg-text{
+        font-size: 150px;
+    }
+    
+    .img-cans{
+        height: 400px;
+        width: 300px;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        height: 550px;
+    }
+    
+    .splash-1{
+        left: -10%;
+    }
+    
+    .splash-2{
+        left: 16%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        width: 450px;
+        height: 450px;
+    }
+    
+    .splash-4{
+        top: -5%;
+        right: -5%;
+        height: 450px;
+        width: 450px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 90px;
+    }
+    
+    footer{
+        font-size: 17px;
+    }
+    
+}
+
+@media (max-width:999px) and (min-width:820px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 100px;
+    }
+    
+    .left-text{
+        width: 25vh;
+        font-size: 16px;
+        left: 8%;
+        bottom: 10%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 10%;
+    }
+    
+    .canimg1{
+        height: 600px;
+        width: 700px;
+        top: 10%;
+        left: 0%;
+    }
+    
+    
+    .canimg2{
+        height: 500px;
+        width: 550px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 70px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;
+        
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 80%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 90px;
+    }
+    
+    .forth-div{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+    }    
+
+    .back-stage1{
+        top: 10%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 15%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 15%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 10%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 400px;
+        width: 450px;
+        bottom: 57%;
+        left: 47%;
+    }
+    
+    .forth-div .img2{
+        height: 420px;
+        width: 520px;
+        bottom: 18%;
+        left: -7%;
+    }
+    
+    .forth-div .img3{
+        height: 500px;
+        width: 670px;
+        bottom: 11%;
+        right: -17%;
+    }
+    
+    .fifth-div{
+        height: 100vh;
+    }
+    
+    .indg-text{
+        font-size: 100px;
+    }
+
+    .backimg-div{
+        top: -10%;
+        left: 3%;
+    }
+    
+    .img-cans{
+        height: 400px;
+        width: 350px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 600px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -18%;
+        top: -10%;
+    }
+    
+    .splash-2{
+        left: -17%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 5%;
+        top: -10%;
+        width: 450px;
+        height: 450px;
+    }
+    
+    .splash-4{
+        top: 30%;
+        right: 0%;
+        height: 450px;
+        width: 500px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 30%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #18006C;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        z-index: 2;
+        cursor: default;
+    }   
+}
+
+@media (max-width:819px) and (min-width:810px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 100px;
+    }
+    
+    .left-text{
+        width: 25vh;
+        font-size: 16px;
+        left: 8%;
+        bottom: 10%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 10%;
+    }
+    
+    .canimg1{
+        height: 600px;
+        width: 700px;
+        top: 10%;
+        left: 0%;
+    }
+    
+    
+    .canimg2{
+        height: 500px;
+        width: 550px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 70px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;
+        
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 80%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 90px;
+    }
+    
+    .forth-div{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+    }    
+
+    .back-stage1{
+        top: 10%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 15%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 15%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 10%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 400px;
+        width: 450px;
+        bottom: 54%;
+        left: 47%;
+    }
+    
+    .forth-div .img2{
+        height: 420px;
+        width: 520px;
+        bottom: 18%;
+        left: -7%;
+    }
+    
+    .forth-div .img3{
+        height: 500px;
+        width: 670px;
+        bottom: 11%;
+        right: -17%;
+    }
+    
+    .fifth-div{
+        height: 100vh;
+    }
+    
+    .indg-text{
+        font-size: 100px;
+    }
+
+    .backimg-div{
+        top: -10%;
+        left: 3%;
+    }
+    
+    .img-cans{
+        height: 400px;
+        width: 350px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 600px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -18%;
+        top: -10%;
+    }
+    
+    .splash-2{
+        left: -17%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 5%;
+        top: -10%;
+        width: 450px;
+        height: 450px;
+    }
+    
+    .splash-4{
+        top: 30%;
+        right: 0%;
+        height: 450px;
+        width: 500px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 30%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #18006C;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        z-index: 2;
+        cursor: default;
+    }   
+}
+
+@media (max-width:809px) and (min-width:770px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 100px;
+    }
+    
+    .left-text{
+        width: 25vh;
+        font-size: 16px;
+        left: 8%;
+        bottom: 10%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 10%;
+    }
+    
+    .canimg1{
+        height: 600px;
+        width: 700px;
+        top: 10%;
+        left: 0%;
+    }
+    
+    
+    .canimg2{
+        height: 500px;
+        width: 550px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 70px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;
+        
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 80%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 90px;
+    }
+    
+    .forth-div{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+    }    
+
+    .back-stage1{
+        top: 10%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 15%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 15%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 10%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 400px;
+        width: 450px;
+        bottom: 59%;
+        left: 47%;
+    }
+    
+    .forth-div .img2{
+        height: 420px;
+        width: 520px;
+        bottom: 18%;
+        left: -7%;
+    }
+    
+    .forth-div .img3{
+        height: 500px;
+        width: 670px;
+        bottom: 11%;
+        right: -17%;
+    }
+    
+    .fifth-div{
+        height: 100vh;
+    }
+    
+    .indg-text{
+        font-size: 100px;
+    }
+
+    .backimg-div{
+        top: -10%;
+        left: 3%;
+    }
+    
+    .img-cans{
+        height: 400px;
+        width: 350px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 600px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -18%;
+        top: -10%;
+    }
+    
+    .splash-2{
+        left: -17%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 5%;
+        top: -10%;
+        width: 450px;
+        height: 450px;
+    }
+    
+    .splash-4{
+        top: 30%;
+        right: 0%;
+        height: 450px;
+        width: 500px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 30%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #18006C;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        z-index: 2;
+        cursor: default;
+    }   
+}
+
+@media (max-width:769px) and (min-width:650px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 100px;
+    }
+    
+    .left-text{
+        width: 26vh;
+        font-size: 16px;
+        left: 8%;
+        bottom: 10%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 10%;
+    }
+    
+    .canimg1{
+        height: 500px;
+        width: 600px;
+        top: 10%;
+        left: 0%;
+    }
+    
+    
+    .canimg2{
+        height: 400px;
+        width: 450px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 70px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;
+        
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 80%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 90px;
+    }
+    
+    .forth-div{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+        width: 580px;
+    }    
+
+    .back-stage1{
+        top: 10%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 15%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 15%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 10%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 340px;
+        width: 400px;
+        bottom: 57%;
+        left: 52%;
+    }
+    
+    .forth-div .img2{
+        height: 370px;
+        width: 450px;
+        bottom: 18%;
+        left: -7%;
+    }
+    
+    .forth-div .img3{
+        height: 430px;
+        width: 600px;
+        bottom: 11%;
+        right: -17%;
+    }
+    
+    .fifth-div{
+        height: 100vh;
+    }
+    
+    .indg-text{
+        font-size: 100px;
+    }
+
+    .backimg-div{
+        top: -10%;
+        left: 3%;
+    }
+    
+    .img-cans{
+        height: 400px;
+        width: 350px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 600px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -18%;
+        top: -10%;
+    }
+    
+    .splash-2{
+        left: -17%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 5%;
+        top: -10%;
+        width: 450px;
+        height: 450px;
+    }
+    
+    .splash-4{
+        top: 30%;
+        right: 0%;
+        height: 450px;
+        width: 500px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 30%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #18006C;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        z-index: 2;
+        cursor: default;
+    }   
+}
+
+@media (max-width:649px) and (min-width:550px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 80px;
+    }
+    
+    .left-text{
+        width: 26vh;
+        font-size: 15px;
+        left: 8%;
+        bottom: 10%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 10%;
+    }
+    
+    .canimg1{
+        height: 400px;
+        width: 500px;
+        top: 10%;
+        left: 0%;
+    }
+    
+    
+    .canimg2{
+        height: 350px;
+        width: 400px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 50px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;
+        
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 25vh;
+        width: 25vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 80%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 70px;
+    }
+    
+    .forth-div{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+        width: 500px;
+    }    
+
+    .back-stage1{
+        top: 10%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 15%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 15%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 10%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 300px;
+        width: 360px;
+        bottom: 59%;
+        left: 44%;
+    }
+    
+    .forth-div .img2{
+        height: 320px;
+        width: 410px;
+        bottom: 18%;
+        left: -7%;
+    }
+    
+    .forth-div .img3{
+        height: 390px;
+        width: 560px;
+        bottom: 11%;
+        right: -21%;
+    }
+    
+    .fifth-div{
+        height: 100vh;
+    }
+    
+    .indg-text{
+        font-size: 70px;
+    }
+
+    .backimg-div{
+        top: -10%;
+        left: 3%;
+    }
+    
+    .img-cans{
+        height: 330px;
+        width: 280px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 480px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -18%;
+        top: -10%;
+    }
+    
+    .splash-2{
+        left: -17%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 0%;
+        top: -10%;
+        width: 380px;
+        height: 380px;
+    }
+    
+    .splash-4{
+        top: 30%;
+        right: 0%;
+        height: 330px;
+        width: 350px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 30%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        font-size: 14px;
+    }   
+}
+
+@media (max-width:549px) and (min-width:400px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 60px;
+    }
+    
+    .left-text{
+        width: 30vh;
+        font-size: 15px;
+        left: 8%;
+        bottom: 15%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 5%;
+    }
+    
+    .canimg1{
+        height: 400px;
+        width: 500px;
+        top: 10%;
+        left: 0%;
+    }
+    
+    
+    .canimg2{
+        height: 350px;
+        width: 400px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 35px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;  
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 25vh;
+        width: 25vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 45%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 50px;
+    }
+    
+    .forth-div{
+        height: 150vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+        width: 500px;
+    }    
+
+    .back-stage1{
+        top: 0%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 25%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 30%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 5%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 300px;
+        width: 360px;
+        bottom: 56%;
+        left: 11%;
+    }
+    
+    .forth-div .img2{
+        height: 320px;
+        width: 410px;
+        bottom: 32%;
+        left: -3%;
+    }
+    
+    .forth-div .img3{
+        height: 390px;
+        width: 560px;
+        bottom: 5%;
+        right: -24%;
+    }
+    
+    .fifth-div{
+        height: 170vh;
+    }
+    
+    .indg-text{
+        font-size: 55px;
+    }
+
+    .backimg-div{
+        top: -15%;
+        left: 17%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-cans{
+        height: 330px;
+        width: 280px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 480px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -27%;
+        top: 0%;
+    }
+    
+    .splash-2{
+        left: -24%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        top: 45%;
+        width: 380px;
+        height: 380px;
+    }
+    
+    .splash-4{
+        top: 70%;
+        right: 25%;
+        height: 330px;
+        width: 350px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 45%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        font-size: 10px;
+    }   
+}
+
+@media (max-width:399px) and (min-width:370px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 60px;
+    }
+    
+    .left-text{
+        width: 30vh;
+        font-size: 15px;
+        left: 8%;
+        bottom: 15%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 20px;
+        bottom: 5%;
+    }
+    
+    .canimg1{
+        height: 400px;
+        width: 500px;
+        top: 10%;
+        left: -10%;
+    }
+    
+    
+    .canimg2{
+        height: 350px;
+        width: 400px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 35px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;  
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 25vh;
+        width: 25vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 45%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 45px;
+    }
+    
+    .forth-div{
+        height: 150vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+        width: 500px;
+    }    
+
+    .back-stage1{
+        top: 0%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 25%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 30%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 5%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 300px;
+        width: 360px;
+        bottom: 56%;
+        left: 6%;
+    }
+    
+    .forth-div .img2{
+        height: 320px;
+        width: 410px;
+        bottom: 32%;
+        left: -3%;
+    }
+    
+    .forth-div .img3{
+        height: 390px;
+        width: 560px;
+        bottom: 5%;
+        right: -24%;
+    }
+    
+    .fifth-div{
+        height: 170vh;
+    }
+    
+    .indg-text{
+        font-size: 55px;
+    }
+
+    .backimg-div{
+        top: -15%;
+        left: 17%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-cans{
+        height: 330px;
+        width: 280px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 480px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -27%;
+        top: 0%;
+    }
+    
+    .splash-2{
+        left: -24%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        top: 45%;
+        width: 380px;
+        height: 380px;
+    }
+    
+    .splash-4{
+        top: 70%;
+        right: 25%;
+        height: 330px;
+        width: 350px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 70px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 45%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        font-size: 10px;
+    }   
+}
+
+@media (max-width:369px) and (min-width:300px) {
+    
+    .s-logo{
+        font-size: 70px;
+    }
+    
+    .header{
+        height: 7vh;
+    }
+    
+    .header a{
+        font-size: 25px;
+    }
+    
+    .logo p{
+        font-size: 35px;
+    }
+    
+    .logo p i{
+        font-size: 20px;
+    }
+    
+    .back-text{
+        font-size: 50px;
+    }
+    
+    .left-text{
+        width: 35vh;
+        font-size: 14px;
+        left: 8%;
+        bottom: 13%;
+    }
+    
+    .try-btn{
+        height: 7vh;
+        width: 20vh;
+        font-size: 16px;
+        bottom: 5%;
+    }
+    
+    .canimg1{
+        height: 400px;
+        width: 500px;
+        top: 10%;
+        left: -15%;
+    }
+    
+    
+    .canimg2{
+        height: 350px;
+        width: 400px;
+        bottom: 0;
+        top: 35%;
+        right: 0%;
+    }
+    
+    .backtext2, .backtext3, .backtext4{
+        font-size: 30px;
+        height: 14vh;
+    }
+    
+    .backtext2{
+        top: 10px;
+        left: 25%;
+    }
+    
+    .backtext3{
+        top: 6%;
+        left: 10%;  
+    }
+    
+    .backtext4{
+        top: 11%;
+        left: 15%;
+    }   
+    
+    .circleshape{
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    .circle1, .circle2{
+        height: 25vh;
+        width: 25vh;
+        border-radius: 50%;   
+    }
+    
+    .circle1{
+        right: -15%;
+        top: 25%;
+    }
+    
+    .circle2{
+        right: 45%;
+        top: 130%;
+    }
+    
+    .third-div{
+        height: 20vh;
+    }
+    
+    .third-div p{
+        font-size: 40px;
+    }
+    
+    .forth-div{
+        height: 150vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        display: none;
+    }
+
+    .back-stage1, .back-stage2, .back-stage3, .back-stage4{
+        display: flex;
+        position: absolute;
+        width: 500px;
+    }    
+
+    .back-stage1{
+        top: 0%;
+        left: -15%;
+    }
+
+    .back-stage2{
+        top: 25%;
+        right: -15%;
+    }
+
+    .back-stage3{
+        bottom: 30%;
+        left: -15%;
+    }
+
+    .back-stage4{
+        bottom: 5%;
+        right: -15%;
+    }
+    
+    .forth-div .img1{
+        height: 230px;
+        width: 280px;
+        bottom: 54%;
+        left: 6%;
+    }
+    
+    .forth-div .img2{
+        height: 250px;
+        width: 320px;
+        bottom: 32%;
+        left: 10%;
+    }
+    
+    .forth-div .img3{
+        height: 300px;
+        width: 450px;
+        bottom: 6%;
+        right: -10%;
+    }
+    
+    .fifth-div{
+        height: 170vh;
+    }
+    
+    .indg-text{
+        font-size: 50px;
+    }
+
+    .backimg-div{
+        top: -15%;
+        left: 17%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-cans{
+        height: 300px;
+        width: 250px;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .can-images{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .can-images div{
+        display:block;
+    }
+    
+    .splash-1, .splash-2, .splash-3, .splash-4{
+        position: absolute;
+        height: 400px;
+        top: 0%;
+        z-index: 1;
+    }
+    
+    .splash-1{
+        left: -27%;
+        top: 0%;
+    }
+    
+    .splash-2{
+        left: -24%;
+        top: 25%;
+    }
+    
+    .splash-3{
+        right: 20%;
+        top: 45%;
+        width: 350px;
+        height: 350px;
+    }
+    
+    .splash-4{
+        top: 70%;
+        right: 25%;
+        height: 300px;
+        width: 320px;
+    }
+    
+    .mango-cube, .strawberry-cube, .vanilla-leafs, .orange-slice{
+        height: 50px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    .mango-cube{
+        left: 15%;
+        top: 15%;
+        transform: rotate(-50deg);
+    }
+    
+    .strawberry-cube{
+        top: 7%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+    
+    .vanilla-leafs{
+        bottom: 45%;
+        left: 10%;
+    }
+    
+    .orange-slice{
+        bottom: 25%;
+        right: 10%;
+    }
+    
+    footer{
+        font-size: 10px;
+    }   
+}
